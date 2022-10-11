@@ -17,39 +17,28 @@ const Dop = (props) => {
           
             <ul>
               <div className='dropdown'>
-                <li><button className='bar'>DOP@E</button></li>
+                <li><button className='bar'>About</button></li>
                 <div className='dropdown-content'>
-                    <a href="">WHY DOP@E</a>
-                    <a href="">oBJECTIVES</a>
-                    <a href="">Outcome</a>
+                    <a href="">About DOP@E</a>
+                    <a href="">Why DOP@E</a>
+                    <a href="">Achievements</a>
                 </div>
               </div>
               
               <div className='dropdown'>
-                <li><button className='bar'>Platform</button></li>
+                <li><button className='bar'>Programs</button></li>
                 <div className='dropdown-content'>
-                    <a href="">Programs</a>
-                    <a href="">Curricurum</a>
-                    <a href="">Schedules</a>
+                    <a href="">Courses</a>
+                    <a href="">Schedule</a>
                 </div>
               </div>
              
              <div className='dropdown'>
               <li><button className='bar'>Initiators</button></li>
-                <div className='dropdown-content'>
-                    <a href="">Partners</a>
-                    <a href="">Mentors</a>
-                    <a href="">Donors</a>
-                </div>
              </div>
               
               <div className='dropdown'>
-                <li><button className='bar'>Stories</button></li>
-                <div className='dropdown-content'>
-                    <a href="">What they do?</a>
-                    <a href="">Sessions</a>
-                    <a href="">Tweets</a>
-                </div>
+                <li><button className='bar'>Contact Us</button></li>
               </div>
               
             </ul>
