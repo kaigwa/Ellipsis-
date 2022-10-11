@@ -52,11 +52,10 @@ const Dop = (props) => {
             </div>
             
           </div>
+          
       </div>
       </>
-     
-       
-     
+
     )
   
   }
