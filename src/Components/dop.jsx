@@ -52,6 +52,21 @@ const Dop = (props) => {
             </div>
             
           </div>
+           <div className='outercontainer'>
+             
+           <div className='cardcontainer'>
+            <div className='card'>
+            <h4><b>ABOUT DOPE</b></h4>
+            </div>
+           </div>
+           
+           <div className='cardcontainer'>
+            <div className='card'>
+            <h4><b>ABOUT DOPE</b></h4>
+            </div>
+           </div>
+
+          </div>
           
       </div>
       </>

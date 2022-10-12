@@ -161,6 +161,37 @@
   outline: none;
 }
 
+.outercontainer {
+  background-color: red;
+  width: 100%;
+  height: 45%;
+  margin-top: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  /*justify-items: space-between;*/
+}
+.cardcontainer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: aliceblue;
+  width: 20%;
+  height: 40%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.cardcontainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  padding: 2px 16px;
+  align-items: center;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
 }
 
