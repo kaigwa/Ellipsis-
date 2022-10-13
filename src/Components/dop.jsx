@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 // import {ImageBackground, View} from 'react';
 import { useNavigate } from "react-router-dom";
 import './dop/dop.css';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import Bootcamp from '../assets/Bootcamp.jpg'; // gives image path
 
 const Dop = (props) => {
     const navigate = useNavigate(); 
@@ -53,7 +54,7 @@ const Dop = (props) => {
             
           </div>
            <div className='outercontainer'>
-             
+
            <div className='cardcontainer'>
             <div className='card'>
             <h4><b>ABOUT DOPE</b></h4>
@@ -62,10 +63,45 @@ const Dop = (props) => {
            
            <div className='cardcontainer'>
             <div className='card'>
-            <h4><b>ABOUT DOPE</b></h4>
+            <h4><b>WHY DOP@E?</b></h4>
             </div>
            </div>
 
+            <div className='cardcontainer'>
+            <div className='card'>
+            <h4><b>ACHIEVEMENTS</b></h4>
+            </div>
+           </div>
+
+          </div>
+          <div className='header'>
+             <h2>PROGRAMS</h2><br/>
+             </div>
+          <div className='outercontainer'>
+            
+           <div className='cardcontainer'>
+            <div className='card'>
+            <h4><b>ABOUT DOPE</b></h4>
+            </div>
+           </div>
+           
+           <div className='cardcontainer'>
+            <div className='card'>
+            <h4><b>WHY DOP@E?</b></h4>
+            </div>
+           </div>
+
+            <div className='cardcontainer'>
+            <div className='card'>
+            <h4><b>ACHIEVEMENTS</b></h4>
+            </div>
+           </div>
+
+          </div>
+
+           <div className='grid-container'>
+             <div className='grid-item'><img src={Bootcamp} alt="this is car image" /></div>
+             <div className='grid-item'>2</div>
           </div>
           
       </div>
