@@ -30,9 +30,9 @@
   background-color: black;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   width: 17.5vh;
 }
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,7 @@
   list-style: none;
   display: flex;
   gap: 4rem;
-  padding-right: 120px;
+  padding: right 7.5em;
 }
 
 .bar {

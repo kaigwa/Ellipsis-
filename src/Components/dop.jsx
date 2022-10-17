@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import './dop/dop.css';
 import { Link } from "react-router-dom";
 import Bootcamp from '../assets/Bootcamp.jpg'; // gives image path
-import Scrollspy from 'react-scrollspy'
+// import Scrollspy from 'react-scrollspy'
+import ScrollSpy from 'react-scrollspy';
 
 const Dop = (props) => {
     const navigate = useNavigate(); 
@@ -22,7 +23,7 @@ const Dop = (props) => {
                 <li><button className='bar'>About</button></li>
                 
                 <div className='dropdown-content'>
-                    <a href="#about-dope">About DOP@E</a>
+                    <a href="#about-dope" ref={React.createRef()}>About DOP@E</a>
                     <a href="">Why DOP@E</a>
                     <a href="">Achievements</a>
                 </div>
@@ -32,7 +33,7 @@ const Dop = (props) => {
               <div className='dropdown'>
                 <li><button className='bar'>Programs</button></li>
                 <div className='dropdown-content'>
-                    <a href="#courses">Courses</a>
+                    <a href="#courses" ref={React.createRef()}>Courses</a>
                     <a href="">Schedule</a>
                 </div>
               </div>
@@ -44,9 +45,10 @@ const Dop = (props) => {
               <div className='dropdown'>
                 <li><button className='bar'>Contact Us</button></li>
               </div>
-              
+
             </ul>
             {/* </Scrollspy> */}
+          
         </nav>
         
         <div className='dope'>
