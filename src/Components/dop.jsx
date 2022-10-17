@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import './dop/dop.css';
 import { Link } from "react-router-dom";
 import Bootcamp from '../assets/Bootcamp.jpg'; // gives image path
+import Scrollspy from 'react-scrollspy'
 
 const Dop = (props) => {
     const navigate = useNavigate(); 
@@ -15,21 +16,23 @@ const Dop = (props) => {
           <div className='logo'>
           <a className='remove-link' href="https://ellipsis.co.tz"><h1><span className='neno'>DOP</span><span><img className='nembo' src="./images/Ellipsis logo 2.png"/></span><span className='e'>E</span></h1></a>
           </div>
-          
+          {/* <Scrollspy items={ ['#about-dope','#courses'] } currentClassName="is-current"> */}
             <ul>
               <div className='dropdown'>
                 <li><button className='bar'>About</button></li>
+                
                 <div className='dropdown-content'>
-                    <a href="">About DOP@E</a>
+                    <a href="#about-dope">About DOP@E</a>
                     <a href="">Why DOP@E</a>
                     <a href="">Achievements</a>
                 </div>
               </div>
               
+              
               <div className='dropdown'>
                 <li><button className='bar'>Programs</button></li>
                 <div className='dropdown-content'>
-                    <a href="">Courses</a>
+                    <a href="#courses">Courses</a>
                     <a href="">Schedule</a>
                 </div>
               </div>
@@ -43,6 +46,7 @@ const Dop = (props) => {
               </div>
               
             </ul>
+            {/* </Scrollspy> */}
         </nav>
         
         <div className='dope'>
@@ -56,7 +60,7 @@ const Dop = (props) => {
            <div className='outercontainer'>
 
            <div className='cardcontainer'>
-            <div className='card'>
+            <div className='card' id='about-dope'>
             <h4><b>ABOUT DOPE</b></h4>
             </div>
            </div>
@@ -86,7 +90,7 @@ const Dop = (props) => {
            </div>
            
            <div className='cardcontainer'>
-            <div className='card'>
+            <div className='card' id='courses'>
             <h4><b>WHY DOP@E?</b></h4>
             </div>
            </div>
