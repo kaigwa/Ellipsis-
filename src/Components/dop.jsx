@@ -80,7 +80,6 @@ const Dop = (props) => {
             <br />
             <span className="tz">Tanzania</span>
           </p>
-
           <div className="an">
             <button className="btn3" onClick={() => navigate("/Form")}>
               APPLY NOW!
