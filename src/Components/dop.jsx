@@ -15,18 +15,18 @@ const Dop = (props) => {
         className="dp"
         style={{ backgroundImage: "url('./images/dope.jpg')" }}
       >
+        <div className="logo">
+          <a className="remove-link" href="https://ellipsis.co.tz">
+            <h1>
+              <span className="neno">DOP</span>
+              <span>
+                <img className="nembo" src="./images/Ellipsis logo 2.png" />
+              </span>
+              <span className="e">E</span>
+            </h1>
+          </a>
+        </div>
         <nav className="nav">
-          <div className="logo">
-            <a className="remove-link" href="https://ellipsis.co.tz">
-              <h1>
-                <span className="neno">DOP</span>
-                <span>
-                  <img className="nembo" src="./images/Ellipsis logo 2.png" />
-                </span>
-                <span className="e">E</span>
-              </h1>
-            </a>
-          </div>
           {/* <Scrollspy items={ ['#about-dope','#courses'] } currentClassName="is-current"> */}
           <ul>
             <div className="dropdown">

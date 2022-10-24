@@ -1,53 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
 .dp {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   background-repeat: none;
   background-position: fixed;
   background-size: cover;
   width: 100%;
-  height: 900px;
+  height: 100vh;
 }
-.dope {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.dp .nav {
+  justify-content: flex-end;
+  width: 40%;
+  margin-left: 20.5rem;
+  margin-top: 25px;
+}
+.dp .logo {
+  flex-direction: row;
+  /* background-color: black; */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5625rem;
+  margin-right: 17.5rem;
+  width: 20%;
+}
+
+.dp .dope {
+  flex-flow: column wrap;
+  margin-right: 12rem;
   text-align: start;
-  padding-top: 10rem;
+  padding: 1rem;
+  width: 80%;
 }
 
-.nembo {
-  width: 25px;
-  height: 15px;
+.dp .logo .nembo {
+  width: 1.5625rem;
+  height: 0.9375rem;
 }
 
-.remove-link:hover {
+.dp .logo .remove-link:hover {
   text-decoration: none;
 }
 
-.neno {
+.dp .logo .neno {
   color: white;
 }
 
-.logo {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 17.5vh;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 25px;
-}
-
-.nav ul {
+.dp .nav ul {
   list-style: none;
   display: flex;
   gap: 4rem;
   padding-right: 7.5em;
 }
 
-.bar {
+.dp .bar {
   color: white;
   font-size: 20px;
   border: none;
@@ -232,10 +241,7 @@
 }
 
 @media (min-width: 35.25em) {
-  .dev,
-  .reach,
-  .code,
-  .tz {
+  .dev.reach.code.tz {
     font-size: 0.78125rem;
   }
   .dp > img {
@@ -244,10 +250,7 @@
   }
 }
 @media (min-width: 48em) {
-  .dev,
-  .reach,
-  .code,
-  .tz {
+  .dev.reach.code.tz {
     font-size: 1.5625rem;
   }
   .dp > img {
@@ -256,10 +259,7 @@
   }
 }
 @media (min-width: 62em) {
-  .dev,
-  .reach,
-  .code,
-  .tz {
+  .dev.reach.code.tz {
     font-size: 2.34375rem;
   }
   .dp > img {
@@ -268,10 +268,7 @@
   }
 }
 @media (min-width: 75em) {
-  .dev,
-  .reach,
-  .code,
-  .tz {
+  .dev.reach.code.tz {
     font-size: 3.125rem;
   }
   .dp > img {
