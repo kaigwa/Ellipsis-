@@ -1,39 +1,46 @@
 * {
   box-sizing: border-box;
 }
-
-.dp {
+.main-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-repeat: none;
-  background-position: fixed;
-  background-size: cover;
   width: 100%;
   height: 100vh;
+}
+.main-container .dp {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: center; */
+  align-content: center;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
 }
 .dp .nav {
   justify-content: flex-end;
   width: 40%;
   margin-left: 20.5rem;
-  margin-top: 25px;
+  margin-top: 0.35rem;
 }
 .dp .logo {
   flex-direction: row;
-  /* background-color: black; */
+  background-color: red;
   justify-content: flex-start;
   align-items: center;
   margin-top: 1.5625rem;
-  margin-right: 17.5rem;
+  margin-left: 0.5rem;
   width: 20%;
 }
 
 .dp .dope {
   flex-flow: column wrap;
-  margin-right: 12rem;
-  text-align: start;
+  margin-left: 15rem;
+  /* text-align: start; */
   padding: 1rem;
-  width: 80%;
+  width: 70%;
 }
 
 .dp .logo .nembo {
@@ -185,7 +192,7 @@
   background-color: red;
   width: 100%;
   height: 40%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   padding: 2%;
   display: flex;
   flex-direction: row;
