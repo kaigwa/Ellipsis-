@@ -16,60 +16,62 @@ const Dop = (props) => {
           className="dp"
           style={{ backgroundImage: "url('./images/dope.jpg')" }}
         >
-          <div className="logo">
-            <a className="remove-link" href="https://ellipsis.co.tz">
-              <h1>
-                <span className="neno">DOP</span>
-                <span>
-                  <img className="nembo" src="./images/Ellipsis logo 2.png" />
-                </span>
-                <span className="e">E</span>
-              </h1>
-            </a>
+          <div className="header">
+            <div className="logo">
+              <a className="remove-link" href="https://ellipsis.co.tz">
+                <h1>
+                  <span className="neno">DOP</span>
+                  <span>
+                    <img className="nembo" src="./images/Ellipsis logo 2.png" />
+                  </span>
+                  <span className="e">E</span>
+                </h1>
+              </a>
+            </div>
+            <nav className="nav">
+              {/* <Scrollspy items={ ['#about-dope','#courses'] } currentClassName="is-current"> */}
+              <ul>
+                <div className="dropdown">
+                  <li>
+                    <button className="bar">About</button>
+                  </li>
+
+                  <div className="dropdown-content">
+                    <a href="#about-dope" ref={React.createRef()}>
+                      About DOP@E
+                    </a>
+                    <a href="">Why DOP@E</a>
+                    <a href="">Achievements</a>
+                  </div>
+                </div>
+
+                <div className="dropdown">
+                  <li>
+                    <button className="bar">Programs</button>
+                  </li>
+                  <div className="dropdown-content">
+                    <a href="#courses" ref={React.createRef()}>
+                      Courses
+                    </a>
+                    <a href="">Schedule</a>
+                  </div>
+                </div>
+
+                <div className="dropdown">
+                  <li>
+                    <button className="bar">Initiators</button>
+                  </li>
+                </div>
+
+                <div className="dropdown">
+                  <li>
+                    <button className="bar">Contact Us</button>
+                  </li>
+                </div>
+              </ul>
+              {/* </Scrollspy> */}
+            </nav>
           </div>
-          <nav className="nav">
-            {/* <Scrollspy items={ ['#about-dope','#courses'] } currentClassName="is-current"> */}
-            <ul>
-              <div className="dropdown">
-                <li>
-                  <button className="bar">About</button>
-                </li>
-
-                <div className="dropdown-content">
-                  <a href="#about-dope" ref={React.createRef()}>
-                    About DOP@E
-                  </a>
-                  <a href="">Why DOP@E</a>
-                  <a href="">Achievements</a>
-                </div>
-              </div>
-
-              <div className="dropdown">
-                <li>
-                  <button className="bar">Programs</button>
-                </li>
-                <div className="dropdown-content">
-                  <a href="#courses" ref={React.createRef()}>
-                    Courses
-                  </a>
-                  <a href="">Schedule</a>
-                </div>
-              </div>
-
-              <div className="dropdown">
-                <li>
-                  <button className="bar">Initiators</button>
-                </li>
-              </div>
-
-              <div className="dropdown">
-                <li>
-                  <button className="bar">Contact Us</button>
-                </li>
-              </div>
-            </ul>
-            {/* </Scrollspy> */}
-          </nav>
 
           <div className="dope">
             <p className="para">
