@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: white;
+  /* background-color: white; */
   align-items: center;
   width: 100%;
   padding: 0.2rem;
@@ -32,7 +32,7 @@
 .dp .nav {
   align-content: center;
   justify-content: center;
-  background-color: blue;
+  /* background-color: blue; */
   width: 70%;
   margin-left: 47rem;
   padding: 0.2rem;
@@ -90,9 +90,13 @@
   cursor: pointer;
 }
 
-.dropdown {
+.nav .dropdown {
   position: relative;
   display: inline-block;
+  /* flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row;
+  margin-left: 3.5rem; */
 }
 
 .dropdown-content {
